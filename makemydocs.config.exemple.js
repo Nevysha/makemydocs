@@ -1,5 +1,5 @@
 const config = {
-    siteName: "Ars Nova Systems - Technical Documentation",
+    siteName: "Technical Documentation",
     repositories: [
         {
             "url": "https://github.com/<organization>/<repository>.git",
