@@ -1,0 +1,27 @@
+{
+  "name": "makemydoc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node lib/main.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.4",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "@types/node": "^20.12.7",
+    "chalk": "^5.3.0",
+    "fs-extra": "^11.2.0",
+    "glob": "^10.3.12",
+    "simple-git": "^3.24.0"
+  }
+}

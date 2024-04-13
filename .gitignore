@@ -1,0 +1,4 @@
+/node_modules/
+/.makemydocs/
+/makemydocs.env.json
+/makemydocs.config.js
