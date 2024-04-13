@@ -18,7 +18,7 @@ const config = {
             //nameMapping specific for repo
             //can be an object or a function
             "nameMapping": [
-                {"README-BestPratices.md": "Best Practices"},
+                {"SPECIFIC_FILE_NAME.md": "Pretty Name"},
             ]
         },
         {

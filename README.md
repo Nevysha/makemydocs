@@ -16,6 +16,19 @@ pip install mkdocs
 
 Create a makemydocs.config.js file in the root of the project.
 
+- `siteName` : the name of the site.
+- `repositories` : list of repositories to include in the documentation.
+    - `url` : url of the repository.
+    - `needsToken` : if the repository needs a token.
+    - `categories` : list of categories for the repository.
+        - `name` : name of the category.
+        - `path` : corresponding path in the repository.
+    - `nameMapping` : list of name mappings for the repository. Can be an object or a function.
+        - `SPECIFIC_FILE_NAME.md` : name of the file in the repository.
+        - `Pretty Name` : name of the link in the documentation.
+        - `(fileName) => string` : function to transform the file name.
+
+
 ```javascript
 const config = {
     //Name of the site
@@ -45,7 +58,7 @@ const config = {
             //nameMapping specific for repo
             //can be an object or a function
             "nameMapping": [
-                {"README-BestPratices.md": "Best Practices"},
+                {"SPECIFIC_FILE_NAME.md": "Pretty Name"},
             ]
         },
         {
@@ -62,6 +75,13 @@ const config = {
 }
 
 export default config;
+```
+
+If needed, create a makemydocs.env.json file in the root of the project to set your github token.
+```json
+{
+  "token": "your_token_here"
+}
 ```
 
 ## How to
